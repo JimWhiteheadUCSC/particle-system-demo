@@ -152,13 +152,13 @@ class PhysicsScene extends Phaser.Scene {
         this.input.keyboard.on('keydown-T', () => {
             this.params.accelerationX = Math.min(200, this.params.accelerationX + 20);
             this.updateEmitter();
-            this.ui.updateParameter('Acceleration', this.params.accelerationX);
+            this.ui.updateParameter('Acceleration X', this.params.accelerationX);
         });
 
         this.input.keyboard.on('keydown-G', () => {
             this.params.accelerationX = Math.max(-200, this.params.accelerationX - 20);
             this.updateEmitter();
-            this.ui.updateParameter('Acceleration', this.params.accelerationX);
+            this.ui.updateParameter('Acceleration X', this.params.accelerationX);
         });
 
         // C - Toggle Bounds
